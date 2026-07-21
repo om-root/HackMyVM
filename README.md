@@ -27,7 +27,7 @@ Each machine contains:
 
 | Machine | Difficulty | Status | Writeup |
 |---------|------------|--------|---------|
-| Up | Easy / Medium | ✅ Completed | [View](./Up/up.md) |
+| Up | Easy / Medium | ✅ Completed | [View](./Up/Up.md) |
 
 > More writeups will be added regularly.
 
