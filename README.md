@@ -28,7 +28,7 @@ Each machine contains:
 | Machine | Difficulty | Status | Writeup |
 |---------|------------|--------|---------|
 | Up | Easy / Medium | ✅ Completed | [View](./Up/Up.md) |
-
+| p4l4nc4 | Easy / Medium | ✅ Completed | [View](./p4l4nc4/p4l4nc4.md) |
 > More writeups will be added regularly.
 
 ## Disclaimer
