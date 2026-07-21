@@ -36,6 +36,7 @@ Decoding the base64 revealed the upload handler logic:
   ```bash
   sudo /usr/bin/gobuster dir -u http://localhost -w /root/rodgarpass -vq
   ```
+  ![missing hash](images/hmv_up_hash.png)
 - Brute-forced the missing character with `maskprocessor`:
   ```bash
   mp64 -1 '?dabcdef' 'b45cffe084dd3d20d928bee85e7b0f2?1' > hashes.txt
