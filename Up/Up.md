@@ -13,7 +13,8 @@ Only port 80 open — Apache 2.4.62 hosting an image upload app ("RodGar - Subir
 ```bash
 dirb http://192.168.0.103
 ```
-Found `/uploads/robots.txt`, which contained a base64-encoded PHP source file.
+Found two potential directories in the search
+`/uploads/` and `/uploads/robots.txt`, which contained a base64-encoded PHP source file.
 
 ## Source Code Analysis
 
