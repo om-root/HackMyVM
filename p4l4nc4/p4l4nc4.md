@@ -55,7 +55,11 @@ Two open ports: `22/tcp` (OpenSSH 9.2p1) and `80/tcp` (Apache 2.4.62, default De
 ## LFI Discovery & Exploitation
 
 - Fuzzed parameters on `m414nj3.php` with **ffuf** and found a `page` parameter vulnerable to **Local File Inclusion**.
+  ```bash
+    ffuf -u http://machine-ip/n3gr4/m414nj3.php?FUZZ=test -w /usr/share/seclists/Discovery/Web-Content/burp-parameter-names.txt -mc 200
+  ```
 - Used it to read `/etc/passwd`, revealing the user **`p4l4nc4`**.
+  ![Parameter Fuzz](images/hmv_p4l4nc4_parameter_page.png)
 - Used the same LFI to pull the user's **SSH private key**.
 - The key was passphrase-protected — extracted the hash with `ssh2john` and cracked it with **John the Ripper**.
 - Logged in via SSH as `p4l4nc4` using the cracked key. Grabbed `user.txt`.
