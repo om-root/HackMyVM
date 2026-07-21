@@ -33,6 +33,9 @@ Decoding the base64 revealed the upload handler logic:
 
 - Found `clue.txt` hinting that user `rodgar`'s password is at `/root/rodgarpass`.
 - `sudo -l` showed the current user could run `gobuster` as root — abused it to read `/root/rodgarpass`, leaking a **truncated MD5 hash** (31 chars instead of 32).
+  ```bash
+  sudo /usr/bin/gobuster dir -u http://localhost -w /root/rodgarpass -vq
+  ```
 - Brute-forced the missing character with `maskprocessor`:
   ```bash
   mp64 -1 '?dabcdef' 'b45cffe084dd3d20d928bee85e7b0f2?1' > hashes.txt
