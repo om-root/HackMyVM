@@ -45,7 +45,7 @@ Decoding the base64 revealed the upload handler logic:
 ## Root
 
 - `sudo -l` as `rodgar` showed `/usr/bin/gcc` was runnable as root.
-  ![sudo -l](/images/hmv_up_rodgar_sudo-l.png)
+  ![sudo -l](images/hmv_up_rodgar_sudo-l.png)
 - Used the GTFOBins gcc technique:
   ```bash
   sudo gcc -wrapper /bin/sh,-s .
