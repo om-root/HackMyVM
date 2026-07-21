@@ -68,6 +68,9 @@ Two open ports: `22/tcp` (OpenSSH 9.2p1) and `80/tcp` (Apache 2.4.62, default De
     john hash --wordlist=rockyou.txt
   ```
 - Logged in via SSH as `p4l4nc4` using the cracked key. Grabbed `user.txt`.
+  ```bash
+    ssh p4l4nc4@machine-ip -i id_rsa
+  ```
 
 ## Privilege Escalation
 
