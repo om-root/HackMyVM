@@ -27,7 +27,7 @@ Each machine contains:
 
 | Machine | Difficulty | Status | Writeup |
 |---------|------------|--------|---------|
-| RodGar | Easy / Medium | ✅ Completed | [View](./RodGar/) |
+| Up | Easy / Medium | ✅ Completed | [View](./Up/) |
 
 > More writeups will be added regularly.
 
