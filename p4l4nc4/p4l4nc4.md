@@ -13,6 +13,9 @@ Two open ports: `22/tcp` (OpenSSH 9.2p1) and `80/tcp` (Apache 2.4.62, default De
 ## Web Enumeration
 
 - Checked `/robots.txt` and used **cewl** against its content to build a custom wordlist.
+  ```bash
+  cewl http://machine-ip/robots.txt -w dict.txt
+  ```
 - The machine hints that usernames follow **1337-speak** conventions, so a custom bash script was used to generate leetspeak variants of every wordlist entry (a→4, e→3, i→1, l→1, o→0, s→5, t→7) and merge them with the originals.
 - Ran **Gobuster** with the custom wordlist and found `/n3gr4/`.
 - The directory was empty on its own, so Gobuster was run again inside `/n3gr4/`, revealing `/n3gr4/m414nj3.php`.
