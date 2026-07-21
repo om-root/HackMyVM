@@ -27,7 +27,8 @@ Decoding the base64 revealed the upload handler logic:
 1. Uploaded a PHP reverse shell renamed to `shell.php.gif` to bypass the extension filter.
 2. Since the server saves the file with a ROT13'd name, requested the ROT13 equivalent of the filename (e.g. `cuceri.cuc.gif` for `phprev.php.gif`) to trigger execution.
 3. Caught a reverse shell with a `nc` listener on port 4444.
-4. Grabbed `user.txt`.
+  ![low shell](images/hmv_up_-1.png)
+5. Grabbed `user.txt`.
 
 ## Privilege Escalation
 
