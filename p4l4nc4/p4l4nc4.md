@@ -61,7 +61,12 @@ Two open ports: `22/tcp` (OpenSSH 9.2p1) and `80/tcp` (Apache 2.4.62, default De
 - Used it to read `/etc/passwd`, revealing the user **`p4l4nc4`**.
   ![Parameter Fuzz](images/hmv_p4l4nc4_parameter_page.png)
 - Used the same LFI to pull the user's **SSH private key**.
+  ![ssh](images/hmv_p4l4nc4_ssh.png)
 - The key was passphrase-protected — extracted the hash with `ssh2john` and cracked it with **John the Ripper**.
+  ```bash
+    ssh2john id_rsa > hash
+    john hash --wordlist=rockyou.txt
+  ```
 - Logged in via SSH as `p4l4nc4` using the cracked key. Grabbed `user.txt`.
 
 ## Privilege Escalation
