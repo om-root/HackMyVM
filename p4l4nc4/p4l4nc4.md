@@ -83,4 +83,11 @@ Two open ports: `22/tcp` (OpenSSH 9.2p1) and `80/tcp` (Apache 2.4.62, default De
 - Predictable username/wordlist conventions (leetspeak) are worth automating a transform for during enumeration.
 - Parameter fuzzing (`ffuf`) on custom PHP endpoints can uncover LFI even when the base page looks empty.
 - LFI isn't just for source disclosure — it can be used to exfiltrate SSH keys directly.
-- World-writable `/etc/passwd` is a critical misconfiguration — always check file permissions on core system files during privesc enumeration.
+- World-writable `/etc/passwd` is a critical misconfiguration — always check file permissions on core system files during 
+
+> 📖 **Original Medium Article:**
+> https://medium.com/@mrwhitecap/hackmyvm-p4l4nc4-81f7f1342682
+
+
+
+
