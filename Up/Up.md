@@ -8,6 +8,7 @@
 ```bash
 nmap -sC -sV 192.168.0.103
 ```
+![Nmap Scan](images/hmv_up_-1.png)
 Only port 80 open — Apache 2.4.62 hosting an image upload app ("RodGar - Subir Imagen").
 
 ```bash
