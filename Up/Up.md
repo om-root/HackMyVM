@@ -50,6 +50,7 @@ Decoding the base64 revealed the upload handler logic:
   ```bash
   sudo gcc -wrapper /bin/sh,-s .
   ```
+  ![root](images/hmv_up_root.png)
 - Got a root shell and read `root.txt`.
 
 ## Key Takeaways
