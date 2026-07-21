@@ -61,3 +61,7 @@ Decoding the base64 revealed the upload handler logic:
 - Obfuscating filenames (ROT13) is not a security control.
 - Truncated/partial hash leaks can still be brute-forced with a small custom mask.
 - Always audit `sudo -l` output against [GTFOBins](https://gtfobins.github.io/).
+
+
+> 📖 **Original Medium Article:**  
+> https://medium.com/@mrwhitecap/hackmyvm-up-806890abe63b
