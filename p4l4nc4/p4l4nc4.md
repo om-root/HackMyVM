@@ -1,8 +1,12 @@
 # HackMyVM: P4l4nc4 (HMV) - Writeup
 
-**Difficulty:** Easy/Medium
+**Author:** Om Chaudhari (MRWhiteCap)</br>
+**Platform:** [HackMyVM](https://hackmyvm.eu/)
+
+**Difficulty:** Easy/Medium</br>
 **Skills:** Custom wordlist generation (cewl + leetspeak), directory fuzzing, LFI, SSH key extraction via LFI, John the Ripper, `/etc/passwd` write-based privesc
 
+---
 ## Recon
 
 ```bash
