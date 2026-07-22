@@ -52,6 +52,7 @@ Key takeaways from the scan:
 Enumerating SMB revealed several available shares.
 
 We connect to the share named `icecream` and upload a reverse shell payload to it.
+![icecream_share](images/hmv_icecream_share.png)
 
 ---
 
