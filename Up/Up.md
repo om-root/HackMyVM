@@ -1,8 +1,11 @@
 # HackMyVM: RodGar (HMV) - Writeup
 
+**Author:** Om Chaudhari (MRWhiteCap)
+
 **Difficulty:** Easy/Medium
 **Skills:** Web enumeration, insecure file upload (extension bypass + ROT13 filename cipher), hash cracking, GTFOBins privilege escalation
 
+---
 ## Recon
 
 ```bash
