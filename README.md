@@ -29,6 +29,7 @@ Each machine contains:
 |---------|------------|--------|---------|
 | Up | Easy / Medium | ✅ Completed | [View](./Up/Up.md) |
 | p4l4nc4 | Easy / Medium | ✅ Completed | [View](./p4l4nc4/p4l4nc4.md) |
+| icecream | Easy / Medium | ✅ Completed | [View](./icecream/icecream.md) |
 > More writeups will be added regularly.
 
 ## Disclaimer
