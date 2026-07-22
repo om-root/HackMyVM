@@ -1,7 +1,7 @@
 # HackMyVM: IceCream
 
 **Author:** Om Chaudhari (MRWhiteCap)</br>
-**Platform:** ![HackMyVM](https://hackmyvm.eu/)
+**Platform:** [HackMyVM](https://hackmyvm.eu/)
 
 **Difficulty:** Easy/Medium</br>
 **Skills:** SMB enumeration, unauthenticated API abuse (NGINX Unit), reverse shell deployment, SSH key persistence, SUID binary abuse for privilege escalation
