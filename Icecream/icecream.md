@@ -1,6 +1,6 @@
 # HackMyVM: IceCream
 
-**Author:** Om Chaudhari (MRWhiteCap)
+**Author:** Om Chaudhari (MRWhiteCap)</br>
 **Platform:** HackMyVM
 
 **Difficulty:** Easy/Medium</br>
