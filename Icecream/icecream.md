@@ -143,4 +143,5 @@ This drops into a **root shell**.
 
 ---
 
-*Originally published on [Medium](https://medium.com) by Om Chaudhari.*
+> 📖 **Original Medium Article:**
+> https://medium.com/@mrwhitecap/hackmyvm-icecream-e94c089248be
