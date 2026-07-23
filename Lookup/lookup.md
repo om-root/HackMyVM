@@ -26,7 +26,7 @@ Two open ports: `22/tcp` (OpenSSH 8.2p1 Ubuntu) and `80/tcp` (Apache 2.4.41, red
 ## Exploiting elFinder
 
 - Browsed to `http://files.lookup.hmv/elFinder/Changelog` to fingerprint the exact elFinder version in use which is `elfinder 2.1.47`
-  ![msfconsole](images/hmv_lookup_metasploit.png)
+  ![msfconsole](images/hmv_lookup_metasploit.png.WEBP)
 - Searched **ExploitDB** for known vulnerabilities matching that version and found a suitable public exploit.
 - Used **Metasploit** to weaponize the exploit:
   ```bash
