@@ -36,6 +36,7 @@ Two open ports: `22/tcp` (OpenSSH 8.2p1 Ubuntu) and `80/tcp` (Apache 2.4.41, red
   set LHOST <attacker_ip>
   run
   ```
+  ![elfiner_exploit](images/hmv_lookup_elfinder_exploit.png)
 - Gained shell access on the target.
 
 ## Privilege Escalation — First Pivot (`www-data` → `think`)
