@@ -42,7 +42,11 @@ Two open ports: `22/tcp` (OpenSSH 8.2p1 Ubuntu) and `80/tcp` (Apache 2.4.41, red
 ## Privilege Escalation — First Pivot (`www-data` → `think`)
 
 - Enumerated SUID binaries and identified `/usr/sbin/pwm` as unusual.
+  ```bash
+    find / -user root -perm -4000 2>/dev/null
+  ```
 - Analysis showed `pwm` calls `id` to resolve the current username, but fails to locate a `.passwords` file, since it expects a home directory path belonging to the user **`think`**.
+  ![pwn](images/hmv_lookup_pwm.pn)
 - Abused this by hijacking the `PATH` variable and planting a fake `id` binary:
   ```bash
   mkdir -p /tmp
